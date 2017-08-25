@@ -6,8 +6,8 @@ require 'rails_helper'
 			@user = FactoryGirl.create(:user)
 			@user2 = FactoryGirl.create(:user2)
 			
-		  #@user = User.create!(email: "example1@pa.pl", password: "2345678")
-		  #@user = User.create!(email: "example2@pa.pl", password: "1234567")
+		  # @user = User.create!(email: "example1@pa.pl", password: "2345678")
+		  # @user = User.create!(email: "example2@pa.pl", password: "1234567")
 		end
 
 		describe 'GET #show' do
@@ -18,12 +18,12 @@ require 'rails_helper'
 
 			it 'loads correct user details' do
 				get :show, id: @user.id
-				expect(response).to be_succes
+				expect(response).to be_success
 				expect(response).to have_http_status(200)
 				expect(assigns(:user)).to eq @user
 			end
 		end
-		
+
 			context "User is not logged in" do
 				it 'redirects user to login' do
 				get :show, id: @user.id
@@ -31,22 +31,19 @@ require 'rails_helper'
 			end
 		end
 
-
-	context "Another user cannot access the showpage of user" do
+			context "User2 cannot access the showpage of User" do
 				before do
 					sign_in @user2
-	end
+			end
 						
 			it 'redirects user2 to login' do
-			get :show, id: @user.id
+			get :show, id: @user2.id
 			expect(response).to have_http_status(302)
 			expect(response).to redirect_to(root_path)
-
-
 		end
 	end
 
-
-
 	end
 end
+
+
