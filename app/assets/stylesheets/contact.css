@@ -8,3 +8,16 @@
 .form-group {
 	padding: 5px;
 }
+.btn-submit {
+	margin: 20px 0;
+    padding: 0px;
+    height: 40px;
+    width: 25%;
+    color: white;
+    background-color: #0142b6;
+    border-color: #0142b6;
+    border-style: none;
+}
+.container {
+	margin-top: 69px;
+}

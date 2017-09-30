@@ -1,0 +1,10 @@
+.btn-lg {
+	width: 50%;
+	background: #0142b6;
+	border-color: #0142b6;
+	border-radius: 0px;
+	font-family: Avenir;
+}
+.stripe-button-el span {
+	display: none !important;
+}

@@ -7,3 +7,9 @@
 .comments {
 	display: inline-block;
 }
+.form_payment {
+	margin-left: 33px;
+}
+.submit-btn {
+	background-color: #fff;
+}

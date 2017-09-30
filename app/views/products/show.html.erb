@@ -6,7 +6,6 @@
 <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.image_url_large") %>
 
 
-<p id="notice"><%= notice %></p>
 <% cache @product do %>  
 <p>
   <strong>Name:</strong>
@@ -18,10 +17,10 @@
   <%= @product.description %>
 </p>
 
-<p>
+<!-- <p>
   <strong>Image url:</strong>
   <%= @product.image_url %>
-</p>
+</p> -->
 
 <p>
   <strong>Color:</strong>
@@ -34,11 +33,15 @@
 </p>
 <% end %>
 
-<%= form_tag "/payments/create" do %>
-  <%= render partial: "shared/stripe_checkout_button" %>
-  <%= hidden_field_tag(:product_id, @product.id) %>
+<div class = 'form_payment'>
+  <%= form_tag "/payments/create" do %>
+    <%= render partial: "shared/stripe_checkout_button" %>
+    <%= hidden_field_tag(:product_id, @product.id) %>
+  <% end %>
+</div>
 
-<% end %>
+<p id="notice"><%= notice %></p>
+
 
 </div>
 

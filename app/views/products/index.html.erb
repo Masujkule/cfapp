@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <br>
-<%= link_to 'New Product', new_product_path %>
+	<%= link_to 'New Product', new_product_path %>
 
   <div class="container-fluid">
     <div class="row">
@@ -12,6 +12,8 @@
       <% end %>
     </div>
   </div>
+
+  <%= will_paginate @products %>
 </br> <!--end row-->
 
 
