@@ -16145,3 +16145,628 @@ Processing by StaticPagesController#landing_page as HTML
 Completed 200 OK in 119ms (Views: 104.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/cable" for ::1 at 2017-10-02 15:00:26 +1100
+  [1m[36mActiveRecord::SchemaMigration Load (39.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 15:00:28 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/" for ::1 at 2017-10-02 15:01:02 +1100
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (2257.0ms)
+Completed 200 OK in 2470ms (Views: 2412.3ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 15:01:05 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 15:01:06 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 15:01:06 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/products" for ::1 at 2017-10-02 15:01:12 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (4.3ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.6ms)
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (548.4ms)
+Completed 200 OK in 657ms (Views: 633.4ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-02 15:02:01 +1100
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (46.7ms)
+Completed 200 OK in 143ms (Views: 137.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2017-10-02 15:02:03 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 15:02:03 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 15:02:07 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/" for ::1 at 2017-10-02 15:52:56 +1100
+  [1m[36mActiveRecord::SchemaMigration Load (16.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (3556.5ms)
+Completed 200 OK in 4157ms (Views: 3962.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2017-10-02 15:53:01 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 15:53:02 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:07:29 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+Started GET "/cable" for ::1 at 2017-10-02 16:07:37 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:07:37 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:07:37 +1100
+ProductChannel stopped streaming from product_channel
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8507.1ms)
+Completed 200 OK in 8731ms (Views: 8663.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:10:01 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (7.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 441ms (Views: 439.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:10:01 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:10:02 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:10:02 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:13:08 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 110ms (Views: 108.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:13:08 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:13:09 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:13:09 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:13:45 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 264ms (Views: 262.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:13:46 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:13:47 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:13:47 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:14:38 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:14:38 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:14:39 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:14:39 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:15:17 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 351ms (Views: 348.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:15:17 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:15:18 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:15:18 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:15:27 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 330ms (Views: 328.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:15:27 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:15:28 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:15:28 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:15:37 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 231ms (Views: 228.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:15:37 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:15:38 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:15:39 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:16:06 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 1089ms (Views: 1087.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:16:07 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:16:08 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:16:08 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:19:35 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 357ms (Views: 354.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:19:35 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:19:36 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:19:36 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:19:51 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 444ms (Views: 442.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:19:51 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:19:52 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:19:52 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:22:34 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 9638ms (Views: 9636.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:22:44 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:22:48 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:22:48 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:23:27 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 1633ms (Views: 1631.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:23:29 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:23:30 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:23:30 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:24:25 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 288ms (Views: 285.8ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:24:25 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:24:26 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:24:26 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:25:09 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 551ms (Views: 549.5ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:25:10 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:25:11 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:25:11 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:28:32 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 210ms (Views: 207.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:28:32 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:28:33 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:28:33 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:33:43 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 724ms (Views: 720.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:33:44 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:33:45 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:33:45 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:34:45 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 330ms (Views: 328.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:34:46 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:34:47 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:34:47 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:35:18 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 242ms (Views: 239.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:35:18 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:35:19 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:35:19 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:37:26 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 71ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:37:26 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:37:27 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:37:27 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:37:35 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 72ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:37:35 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:37:36 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:37:36 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:37:56 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 120ms (Views: 118.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:37:56 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:37:57 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:37:57 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:38:15 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:38:15 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:38:16 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:38:16 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:39:37 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 458ms (Views: 456.7ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:39:37 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:39:38 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:39:38 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:41:16 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 197ms (Views: 195.1ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:41:16 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:41:17 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:41:17 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:41:43 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 193ms (Views: 190.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:41:43 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:41:44 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:41:44 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:42:12 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 193ms (Views: 178.5ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:42:12 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:42:13 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:42:13 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_up" for ::1 at 2017-10-02 16:42:34 +1100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 81ms (Views: 79.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-10-02 16:44:29 +1100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:44:29 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:44:30 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:44:30 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_up" for ::1 at 2017-10-02 16:44:50 +1100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 64ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:44:51 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:44:52 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:44:52 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:45:23 +1100
+Processing by Devise::SessionsController#new as HTML
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:45:23 +1100
+ProductChannel stopped streaming from product_channel
+Started POST "/users" for ::1 at 2017-10-02 16:45:23 +1100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+clqikDiA4Zicl9QM9Lo05lqJliaA8wvNJMYAeTzrzytIeNUkU2k1sccs1MKSwjuGKlqKx51bPLZZf59G82esQ==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (1.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 183ms (Views: 180.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 261ms (Views: 72.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/cable" for ::1 at 2017-10-02 16:45:24 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:45:24 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:45:24 +1100
+Processing by Devise::SessionsController#new as HTML
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:45:24 +1100
+ProductChannel stopped streaming from product_channel
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 112ms (Views: 110.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2017-10-02 16:45:25 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:45:25 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/sign_in" for ::1 at 2017-10-02 16:45:45 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 170ms (Views: 168.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2017-10-02 16:45:52 +1100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 95ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2017-10-02 16:48:06 +1100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 81ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:48:06 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:48:07 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:48:07 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/password/new" for ::1 at 2017-10-02 16:48:58 +1100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 75ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:48:58 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:48:59 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:48:59 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/password/new" for ::1 at 2017-10-02 16:49:24 +1100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 66ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:49:24 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:49:25 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:49:25 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/users/password/new" for ::1 at 2017-10-02 16:50:06 +1100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 77ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-02 16:50:06 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-02 16:50:07 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-02 16:50:07 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
