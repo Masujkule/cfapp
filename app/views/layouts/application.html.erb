@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>lazyboy surfboards</title>
+      <title>lazyboySurfboards</title>
   <link href="https://fonts.googleapis.com/css?family=Anton|Lato:900|Muli:200|Oxygen" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   
@@ -27,9 +27,9 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#">
-              <%= image_tag("lazyboy3.svg", class:"logo_button") %>
-            </a>
+            <%= link_to root_path do %>
+             <%= image_tag "lazyboy3.svg", class:"navbar-brand" %>
+            <% end %>
 
           </div> <!--end navbar header-->
           <div class="navbar-collapse collapse pull-left" id="navbar-collapse-1">
@@ -39,26 +39,34 @@
               <li><%= link_to "products", products_path %></li>
               <li><%= link_to "contact", '/static_pages/contact' %></li>
 
+              <% if current_page?("/products")%>
+
               <li class= nav-search>
-              <form class="navbar-form navbar-left" role="search">
-                <div class="form-group-mobile">
-                  <%= form_tag("/products", method: "get") do %>
-                  <%= text_field_tag(:q) %>
-                </div>
-                  <button type="submit" class="btn btn-default">
-                  <span class="glyphicon glyphicon-search"></span>
-                  </button>
-                <% end %>
-              </form>
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group-mobile">
+                    <%= form_tag("/products", method: "get") do %>
+                    <%= text_field_tag(:q) %>
+                  </div>
+                    <button type="submit" class="btn btn-default">
+                    <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                  <% end %>
+                </form>
+                </li>
+                <li class="find">
+                  <a>find your board</a>
               </li>
 
-               <li class="login">
-              <% if user_signed_in? %>
-                <%= link_to('Log out', destroy_user_session_path, :method => :delete) %>
-              <% else %>
-                <%= link_to('Log in', new_user_session_path) %>
-              <% end %>
+              <% end %>  
+
+              <li class="login">
+                <% if user_signed_in? %>
+                  <%= link_to('Log out', destroy_user_session_path, :method => :delete) %>
+                  <% else %>
+                  <%= link_to('Log in', new_user_session_path) %>
+                <% end %>
               </li>
+
             </ul>
         </div> <!--navbar nav-->
       </div> <!--end nav container--> 

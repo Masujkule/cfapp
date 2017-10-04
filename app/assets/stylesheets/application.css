@@ -17,11 +17,13 @@
 }
 .container-fluid .navbar-header {
 	margin-top: 10px;
+	margin-left: 15px;
 }
-.navbar-brand>img{
+.navbar-brand {
   max-width: 260px;
+  height: auto;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 .body {
   position: relative;
@@ -78,7 +80,7 @@ h1 ,h2{
 /*search window form*/
 .form-group-mobile {
 	display: inline-block;
-  border: 1px solid #9d9d9d;
+  	border: 1px solid #0142b6;
 }
 .btn.btn-default {
 	padding: 0px;
@@ -107,7 +109,7 @@ h1 ,h2{
 	margin: 2px;
 	display:inline-block;
 }
-.navbar-brand>img {
+.navbar-brand {
   max-width: 125px;
   margin: auto;
   margin-top: 16px;
@@ -118,11 +120,14 @@ h1 ,h2{
 }
 .login {
 	display: inline-block;
-	font-family: Courier, Helvetica, Arial, sans-serif;
-	font-size: 8px;
+	font-family: avenir, Courier, Helvetica, Arial, sans-serif;
+	font-size: 7px;
 	font-weight: 100;
 	margin-top: 0px;
 	padding-top: 0px;
+}
+.find a {
+	color: #0142b6;
 }
 .navbar-toggle {
 	background-color: white;
