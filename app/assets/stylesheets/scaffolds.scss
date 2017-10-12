@@ -89,3 +89,12 @@ div {
 label {
   display: block;
 }
+
+@media screen and (max-width: 620px) {
+  #notice {
+    margin: 24px;
+  }
+}
+
+
+
