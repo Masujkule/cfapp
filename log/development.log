@@ -24166,3 +24166,464 @@ Processing by StaticPagesController#landing_page as HTML
 Completed 200 OK in 63ms (Views: 43.0ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2017-10-12 12:06:17 +1100
+  [1m[36mActiveRecord::SchemaMigration Load (18.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (4318.4ms)
+  [1m[36mUser Load (13.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 4556ms (Views: 4482.3ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/cable" for ::1 at 2017-10-12 12:06:22 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 12:06:23 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/products" for ::1 at 2017-10-12 12:06:27 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (3.5ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (0.8ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (571.4ms)
+Completed 200 OK in 667ms (Views: 643.5ms | ActiveRecord: 2.9ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-10-12 12:06:34 +1100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xvbA9j0PFWMnu2M4FwjAUD73zkV8B5AyPvIBykHvBJyhLycmBOCqDHMxA3oQ3vNyA5mtUJyouKPWRYSHl5hi4w=="}
+  [1m[36mUser Load (24.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 62ms (ActiveRecord: 24.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-12 12:06:34 +1100
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 115ms (Views: 110.3ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-12 12:06:34 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-12 12:06:34 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 12:06:34 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/products" for ::1 at 2017-10-12 12:06:37 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (2.1ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (37.3ms)
+Completed 200 OK in 152ms (Views: 135.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for ::1 at 2017-10-12 12:06:46 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (1.7ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 96ms (Views: 82.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for ::1 at 2017-10-12 12:07:13 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (2.2ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (54.2ms)
+Completed 200 OK in 104ms (Views: 97.3ms | ActiveRecord: 0.7ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-12 12:07:13 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-12 12:07:13 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 12:07:13 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/products" for ::1 at 2017-10-12 12:07:22 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (1.8ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 97ms (Views: 87.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products" for ::1 at 2017-10-12 12:07:28 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (1.9ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (1.2ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (48.2ms)
+Completed 200 OK in 123ms (Views: 104.3ms | ActiveRecord: 0.7ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-12 12:07:28 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-12 12:07:29 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 12:07:29 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/products" for ::1 at 2017-10-12 12:07:50 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (2.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 127ms (Views: 116.1ms | ActiveRecord: 0.7ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-12 12:07:50 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-12 12:07:51 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 12:07:51 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/products" for ::1 at 2017-10-12 12:07:54 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (11.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (2.2ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (2.1ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (5.3ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (84.2ms)
+Completed 200 OK in 150ms (Views: 130.4ms | ActiveRecord: 11.3ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-12 12:07:54 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-12 12:07:55 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 12:07:55 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/products" for ::1 at 2017-10-12 12:08:10 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (1.7ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (46.2ms)
+Completed 200 OK in 102ms (Views: 93.2ms | ActiveRecord: 1.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-12 12:08:10 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-12 12:08:10 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 12:08:10 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/" for ::1 at 2017-10-12 12:08:13 +1100
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 63ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2017-10-12 12:08:15 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (1.6ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 226ms (Views: 220.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/53" for ::1 at 2017-10-12 12:08:19 +1100
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered shared/_stripe_checkout_button.html.erb (0.8ms)
+  Rendered products/_new_comment.html.erb (117.1ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 53]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 53], ["LIMIT", 4], ["OFFSET", 0]]
+  Rendered products/_comments.html.erb (6.1ms)
+  Rendered products/show.html.erb within layouts/application (168.9ms)
+Completed 200 OK in 393ms (Views: 216.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/products" for ::1 at 2017-10-12 12:08:29 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (1.9ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (125.6ms)
+Completed 200 OK in 185ms (Views: 180.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/60" for ::1 at 2017-10-12 12:08:31 +1100
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"60"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 60], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered shared/_stripe_checkout_button.html.erb (0.7ms)
+  Rendered products/_new_comment.html.erb (2.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 60]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 60], ["LIMIT", 4], ["OFFSET", 0]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (7.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (1.6ms)
+  Rendered products/_comments.html.erb (62.6ms)
+  Rendered products/show.html.erb within layouts/application (78.4ms)
+Completed 200 OK in 142ms (Views: 135.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products" for ::1 at 2017-10-12 12:09:28 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (1.9ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (9.0ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.7ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (137.3ms)
+Completed 200 OK in 303ms (Views: 284.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/55" for ::1 at 2017-10-12 12:09:34 +1100
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"55"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered shared/_stripe_checkout_button.html.erb (0.8ms)
+  Rendered products/_new_comment.html.erb (3.3ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 55]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 55], ["LIMIT", 4], ["OFFSET", 0]]
+  Rendered products/_comments.html.erb (3.1ms)
+  Rendered products/show.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 182ms (Views: 88.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-10-12 12:09:42 +1100
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (95.6ms)
+Completed 200 OK in 239ms (Views: 220.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2017-10-12 12:09:44 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (6.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (1.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (98.0ms)
+Completed 200 OK in 317ms (Views: 275.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products" for ::1 at 2017-10-12 12:12:18 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (1.8ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.7ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 1724ms (Views: 1684.4ms | ActiveRecord: 1.2ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-12 12:12:20 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-12 12:12:21 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 12:12:21 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/products/60" for ::1 at 2017-10-12 12:12:27 +1100
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"60"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 60], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered shared/_stripe_checkout_button.html.erb (0.7ms)
+  Rendered products/_new_comment.html.erb (2.8ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 60]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 60], ["LIMIT", 4], ["OFFSET", 0]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (3.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (1.8ms)
+  Rendered products/_comments.html.erb (24.8ms)
+  Rendered products/show.html.erb within layouts/application (47.3ms)
+Completed 200 OK in 136ms (Views: 105.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products" for ::1 at 2017-10-12 12:12:35 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (5.1ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (30.5ms)
+  Rendered products/_product.html.erb (0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (165.5ms)
+Completed 200 OK in 244ms (Views: 235.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/60" for ::1 at 2017-10-12 12:12:40 +1100
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"60"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 60], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered shared/_stripe_checkout_button.html.erb (0.9ms)
+  Rendered products/_new_comment.html.erb (3.3ms)
+  [1m[35m (124.7ms)[0m  [1m[34mSELECT AVG("comments"."rating") FROM "comments" WHERE "comments"."product_id" = ?[0m  [["product_id", 60]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."product_id" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["product_id", 60], ["LIMIT", 4], ["OFFSET", 0]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (4.1ms)
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (5.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered comments/_comment.html.erb (1.8ms)
+  Rendered products/_comments.html.erb (148.7ms)
+  Rendered products/show.html.erb within layouts/application (168.0ms)
+Completed 200 OK in 349ms (Views: 161.3ms | ActiveRecord: 125.7ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-10-12 12:13:04 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (91.9ms)
+Completed 200 OK in 277ms (Views: 260.8ms | ActiveRecord: 0.0ms)
+
+
