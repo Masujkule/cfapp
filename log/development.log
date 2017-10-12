@@ -25343,3 +25343,141 @@ Processing by StaticPagesController#landing_page as HTML
 Completed 200 OK in 91ms (Views: 60.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/cable" for ::1 at 2017-10-12 17:46:30 +1100
+  [1m[36mActiveRecord::SchemaMigration Load (27.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 17:46:30 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/" for ::1 at 2017-10-12 17:47:49 +1100
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (8162.8ms)
+Completed 200 OK in 8348ms (Views: 8289.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-12 17:47:59 +1100
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (8.5ms)
+Started GET "/cable" for ::1 at 2017-10-12 17:47:59 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 17:47:59 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Completed 200 OK in 101ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-12 17:48:00 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-12 17:48:01 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 17:48:01 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/" for ::1 at 2017-10-12 17:48:54 +1100
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 235ms (Views: 229.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-12 17:48:54 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-12 17:48:55 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 17:48:55 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/" for ::1 at 2017-10-12 17:49:23 +1100
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 157ms (Views: 152.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-12 17:49:23 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-12 17:49:24 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 17:49:24 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/" for ::1 at 2017-10-12 17:50:13 +1100
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 119ms (Views: 115.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-12 17:50:14 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-12 17:50:14 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 17:50:14 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/" for ::1 at 2017-10-12 17:53:12 +1100
+Processing by StaticPagesController#landing_page as HTML
+  Rendering static_pages/landing_page.html.erb within layouts/application
+  Rendered static_pages/landing_page.html.erb within layouts/application (98.4ms)
+Completed 200 OK in 347ms (Views: 321.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-10-12 17:53:12 +1100
+ProductChannel stopped streaming from product_channel
+Started GET "/cable" for ::1 at 2017-10-12 17:53:13 +1100
+Started GET "/cable/" [WebSocket] for ::1 at 2017-10-12 17:53:13 +1100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ProductChannel is transmitting the subscription confirmation
+ProductChannel is streaming from product_channel
+Started GET "/static_pages/about" for ::1 at 2017-10-12 17:53:27 +1100
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 144ms (Views: 104.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2017-10-12 17:53:29 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (3.2ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (465.0ms)
+Completed 200 OK in 549ms (Views: 534.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/static_pages/contact" for ::1 at 2017-10-12 17:53:32 +1100
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 64ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2017-10-12 17:53:35 +1100
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  Rendered products/_product.html.erb (9.9ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (7.9ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (66.2ms)
+Completed 200 OK in 164ms (Views: 159.5ms | ActiveRecord: 0.6ms)
+
+
