@@ -1,5 +1,5 @@
 
-<% if signed_in? %>
+
   <h4>Add a review:</h4>
   <%= form_for([@product, @product.comments.build],remote: true) do |f| %>
     
@@ -11,7 +11,7 @@
     <p>
       <div class="rating"></div>
     </p>  
-    
+<% if signed_in? %>    
     <p>
       <%= f.submit "Submit", class:"btn-submit" %>
     </p>

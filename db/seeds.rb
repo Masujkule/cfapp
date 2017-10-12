@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
  
- Product.create(:name => "Pukas The Game", :description => "an intermediate board", :image_url => "https://asset3.surfcdn.com/pukas-surfboards-pukas-the-game-surfboard-red.jpg?w=1200&h=1200&r=4&q=80&o=YoPPBD0F9pCbl@$azPPOUMmOR1gj&V=1Mkp",  :price => 666)
+ Product.create(:name => "PKS The Egg", :description => "not suitable for begginers", :image_url => "https://asset2.surfcdn.com/pks-surfboards-pks-the-egg-surfboard-6ft-8.jpg?w=1200&h=1200&r=4&q=80&o=CJjXUOiOoDtRQ5nHQr2kp55PPQQj&V=Drir",  :price => 666)
  Product.create(:name => "Pukas DFK", :description => "just a surfboard", :image_url => "https://asset3.surfcdn.com/pukas-surfboards-pukas-dfk-ii-surfboard-2015-model-purple.jpg?w=1200&h=1200&r=4&q=80&o=kFVOZtA1lH1PSdIgyBYsA4WBow4j&V=3yw6", :price => 666)
  Product.create(:name => "Pukas Pop", :description => "not suitable for begginers", :image_url => "https://asset1.surfcdn.com/pukas-surfboards-pukas-pop-surfboard-2015-model-white.jpg?w=1200&h=1200&r=4&q=80&o=WGDTUuTyLDDbLF3euxlr@IwScJsj&V=z1kc", :price => 666)
  Product.create(:name => "Pukas Resin Cake", :description => "an egg shape board", :image_url => "https://asset1.surfcdn.com/pukas-surfboards-pukas-resin-cake-surfboard-white.jpg?w=1200&h=1200&r=4&q=80&o=3ndujppTBAJAIMcEUlND2TcW3kIj&V=8pr0", :price => 666)
@@ -21,9 +21,9 @@
  Product.create(:name => "Fresh Fish", :description => "an egg shape board", :image_url => "https://asset1.surfcdn.com/fresh-fish-surfboards-fresh-fish-the-mola-mola-surfboard-red-white.jpg?w=1200&h=1200&r=4&q=80&o=fNBFaR03x51jagoVGmLgmTDsgKsj&V=URPj", :price => 666)
 
 
- # Comment.create!(user: User.first, product: Product.first, rating: 1, body: "bad")
- # Comment.create!(user: User.first, product: Product.first, rating: 4, body: "nice")
- # Comment.create!(user: User.first, product: Product.first, rating: 2, body: "meh")
+ Comment.create!(user: User.first, product: Product.first, rating: 1, body: "bad")
+ Comment.create!(user: User.first, product: Product.first, rating: 4, body: "nice")
+ Comment.create!(user: User.first, product: Product.first, rating: 2, body: "meh")
 
 
- # User.create!(email: 'admin69@gmail.com', password: 'pass666', password_confirmation: 'pass666', admin: true)
+ User.create!(email: 'admin69@gmail.com', password: 'pass666', password_confirmation: 'pass666', admin: true)
