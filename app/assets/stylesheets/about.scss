@@ -8,12 +8,16 @@
 }
 .about {
 	color: #000;
+	margin-top: 140px;
 	margin-bottom: 40px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 @media screen and (max-width: 620px) {
-.container h1 {
-	margin-top: 0px;
-	margin-left: 0px;
+	.container h1 {
+		margin-top: 0px;
+		margin-left: 0px;
+		}
+	.about {
+		margin-top: 80px;
 	}
 }

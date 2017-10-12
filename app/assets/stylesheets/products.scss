@@ -2,7 +2,9 @@
 .img-products {
   margin: 10px;
   width: 120em;
-  height: 100%; }
+  height: 100%; 
+  margin-top: 30px;
+  }
 
 .header_products h1 {
 	margin: 10px 25px;
@@ -14,7 +16,7 @@
 	margin-top: 10px;
 }
 .product-details {
-	padding: 0px;
+	margin: auto 0;
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	font-weight: 100;
@@ -26,10 +28,6 @@
 	font-size: 1em;
 	font-weight: bold;
 	color: black;
-}
-.img-products {
-	height:100px;
-	width:100%;
 }
 .alert {
 	margin: 0px;
@@ -51,6 +49,8 @@
 	margin: 10px;
 	width: 120em;
 	height: 100%;
+	margin-top: 60px;
+	padding-top: 0px;
 }
 .pagination {
 	font-family: Avenir;
